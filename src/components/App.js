@@ -13,7 +13,7 @@ function App() {
     const [cartItems, setCartItems]= useState([]);
     const [totalCart, setTotalCart] = useState(""); 
     const [showForm, setShowForm] = useState(false);
-    
+
     useEffect(()=>{
 
         document.title = "Clearvision Optical";
@@ -43,6 +43,18 @@ function App() {
         
         setTotalCart((totalCart)=> totalCart + frameObj.price);
         
+    }
+
+    function handleRemove(frameObj){
+        const updatedCart = cartItems.filter(item => item.id !== frameObj.id)
+        setCartItems(updatedCart);
+    
+        fetch('http://localhost:3000/glasses')
+        .then(resp => resp.json())
+        .then(frameList => setFrameList(frameList)) 
+    
+        
+        setTotalCart((totalCart)=> totalCart - frameObj.price);
     }
       
 
