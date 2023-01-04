@@ -8,6 +8,41 @@ function NewFrameForm({onAddFrame}){
         price: 0.0,
     })
     
+    function handleChange(event){
+
+        console.log(event.target.value)
+    
+        if(event.target.name === "price"){
+            setFrameData({
+                ...frameData, 
+                [event.target.name]: parseFloat(event.target.value),
+            })
+        }else{
+            setFrameData({
+                ...frameData, 
+                [event.target.name]: event.target.value,
+            })
+        }
+    }
+
+    function handleSubmit(event){
+        event.preventDefault();
+        fetch('http://localhost:3000/glasses',{
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(frameData)
+        })
+        .then(resp => resp.json())
+        .then(frame => onAddFrame(frame))
+    
+        const inputs = document.querySelectorAll("input");
+        for(let i = 0; i < inputs.length; i++){
+            inputs[i].value = "";
+        }
+        
+    }
 
     return(
         <div className="new-frame-form">
