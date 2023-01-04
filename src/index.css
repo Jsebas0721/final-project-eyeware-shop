@@ -63,6 +63,32 @@ header h1{
   
 }
 
+.home-container {
+  text-align: center;
+  background-color: white;
+  font-size: 30px;
+  color: #070404;
+  line-height: 76px;
+  padding-bottom: 45px;
+  font-weight: bolder;
+  font-family: 'Poppins', sans-serif;
+}
+.blue{
+  color:aqua;
+  font-weight: bold;
+}
+
+.frame-container h2 {
+  text-align: center;
+  font-style: italic;
+}
+
+
+.frameCards {
+  list-style: none;
+}
+
+
 .frame-product{
   margin: 1rem;
   display: inline-block;
