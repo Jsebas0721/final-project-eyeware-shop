@@ -148,3 +148,7 @@ table{
 .onCart img{
   width: 150px;
 }
+
+.cart-total{
+  font-weight: bolder;
+}
