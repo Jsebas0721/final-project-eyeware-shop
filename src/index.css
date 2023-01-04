@@ -118,3 +118,12 @@ header h1{
   padding-right: 20px;
  
 }
+
+.cart-container{
+  background-color: white;
+}
+
+.cart-container h1{
+  font-style: italic;
+   text-align: center;
+}
