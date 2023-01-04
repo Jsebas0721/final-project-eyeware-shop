@@ -63,8 +63,11 @@ function App() {
         setFrameList([...frameList, frameObj])
     
     }
-      
 
+    function handleClick(){
+        setShowForm((showForm)=> !showForm)
+    }
+      
 
     return (
         <div className="App">
