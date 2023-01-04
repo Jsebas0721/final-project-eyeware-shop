@@ -3,8 +3,25 @@ import React from "react";
 function Cart({cartItems, onRemoveItem, totalCart}){
 
 
+    function handleClick(event){
+  
+        fetch(`http://localhost:3000/glasses/${event}`,{
+            method: "PATCH",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              "onCart": false,
+            })
+          })
+        .then(resp => resp.json())
+        .then(frame => {
+            console.log("Removed Frame: ",frame)
+            onRemoveItem(frame);
+        });
+       
+    }
 
-    
     const addedToCart = cartItems.map(item => (
         <tr key={item.id}>
             <td>
