@@ -29,3 +29,36 @@ header h1{
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
 }
+
+.navbar {
+  text-align: center;
+}
+
+.new-frame-form{
+  padding-top: 5px;
+  height: 70px; 
+  line-height: 5px;
+  background-color: aqua;
+  text-align: center;
+  font-weight: bolder;
+ 
+}
+.new-frame-form input {
+  margin-right: 2rem;
+}
+
+.frame-container {
+  background-color: white;
+}
+
+.new-frame-button-container {
+  text-align: center;
+  padding:5px;
+}
+.new-frame-button-container button {
+  background-color: aqua;
+  border-radius: 5px;
+  cursor:pointer;
+  font-weight: bold;
+  
+}
