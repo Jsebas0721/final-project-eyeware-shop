@@ -56,6 +56,13 @@ function App() {
         
         setTotalCart((totalCart)=> totalCart - frameObj.price);
     }
+
+    function handleAddFrame(frameObj){
+        console.log("New Frame Added: ", frameObj);
+        parseFloat(frameObj.price);
+        setFrameList([...frameList, frameObj])
+    
+    }
       
 
 
