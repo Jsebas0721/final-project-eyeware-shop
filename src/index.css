@@ -101,3 +101,20 @@ header h1{
 .frame-product img {
   width: 100%;
 }
+.active-button {
+  margin-top: 0.5rem;
+  background-color:aqua;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: grabbing;
+}
+.disabled-button {
+  margin-top: 0.5rem;
+  background-color:rgb(170, 167, 167);
+  font-weight: bold;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+ 
+}
