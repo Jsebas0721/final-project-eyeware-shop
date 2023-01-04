@@ -4,7 +4,24 @@ function Frame({frame, onHandleBuy}){
 
     const{id,name,image, price, onCart} = frame
 
-   
+    function handleClick(){
+        
+        fetch(`http://localhost:3000/glasses/${id}`,{
+            method: "PATCH",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              "onCart": true,
+            })
+          })
+        .then(resp => resp.json())
+        .then(frame => {
+            console.log("Added to Cart: ",frame)
+            onHandleBuy(frame)
+           
+        });
+    }
     
     return(
         <div className="frame-product">
