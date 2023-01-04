@@ -9,7 +9,11 @@ import Cart from "./Cart";
 
 function App() {
 
-
+    const [frameList, setFrameList]= useState([]);
+    const [cartItems, setCartItems]= useState([]);
+    const [totalCart, setTotalCart] = useState(""); 
+    const [showForm, setShowForm] = useState(false);
+    
     useEffect(()=>{
 
         document.title = "Clearvision Optical";
@@ -25,6 +29,22 @@ function App() {
           setTotalCart(total);
         })
       },[])
+
+    function handleBuy(frameObj){
+        const boughtFrames = frameList.map(frame => {
+          if(frame.id === frameObj.id){
+            return frameObj;
+          }else{
+            return frame;
+          }
+        })
+        setFrameList(boughtFrames);
+        setCartItems([...cartItems, frameObj])
+        
+        setTotalCart((totalCart)=> totalCart + frameObj.price);
+        
+    }
+      
 
 
     return (
