@@ -3,7 +3,12 @@ import {NavLink} from "react-router-dom";
 
 function NavBar(){
 
-  
+    const linkStyles = {
+        width: "100px",
+        padding: "30px",
+        margin: "0 10px 10px",
+        color: "white",
+    };
 
     return(
         <div className="navbar">
