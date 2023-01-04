@@ -10,7 +10,21 @@ import Cart from "./Cart";
 function App() {
 
 
-  
+    useEffect(()=>{
+
+        document.title = "Clearvision Optical";
+    
+        fetch('http://localhost:3000/glasses')
+        .then(resp => resp.json())
+        .then(frameList => {
+          setFrameList(frameList)
+          const cart = frameList.filter(frame => frame.onCart);
+          setCartItems(cart);
+          const framePrices = cart.map(item => item.price);
+          const total = framePrices.reduce((acc, currValue) => acc+ currValue,0)
+          setTotalCart(total);
+        })
+      },[])
 
 
     return (
