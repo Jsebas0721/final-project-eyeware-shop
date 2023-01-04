@@ -2,7 +2,13 @@ import React, { useState } from "react";
 
 function NewFrameForm({onAddFrame}){
 
+    const [frameData, setFrameData] = useState({
+        name: "",
+        image: "",
+        price: 0.0,
+    })
     
+
     return(
         <div className="new-frame-form">
             <h1>New Frame</h1>
