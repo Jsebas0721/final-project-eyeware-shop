@@ -44,3 +44,7 @@ $ npm start
 
 ![Shop page](https://user-images.githubusercontent.com/108071188/210833592-8735b281-f726-49d3-b1bd-8df0caca58a9.png)
 
+- Add a new frame or Add to Cart.
+
+![Add frame](https://user-images.githubusercontent.com/108071188/210834932-204264b3-f609-41c8-b38f-237950b1ecf0.png)
+
