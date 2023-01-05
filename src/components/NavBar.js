@@ -42,7 +42,8 @@ function NavBar(){
                         color: "aqua",
                       }}
                 >
-                Cart🛒
+                Cart 
+                <span role="img" alt="emoji">🛒</span>
                 </NavLink>  
             </ul>
         </div>

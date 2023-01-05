@@ -11,7 +11,7 @@ function Home(){
                 </span>
                 TO THE BEST GLASSES STORE 
             </h1>
-            <img src="https://cdn.shopify.com/s/files/1/0507/8954/8229/t/35/assets/warbyparkerreviewfeaturedbanner-1644926207240.jpg?v=1644926209"/>
+            <img src="https://cdn.shopify.com/s/files/1/0507/8954/8229/t/35/assets/warbyparkerreviewfeaturedbanner-1644926207240.jpg?v=1644926209" alt="HomeImage"/>
         </div>
     )
 }

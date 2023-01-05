@@ -25,7 +25,7 @@ function Cart({cartItems, onRemoveItem, totalCart}){
     const addedToCart = cartItems.map(item => (
         <tr key={item.id}>
             <td>
-                <img src={item.image}/>
+                <img src={item.image} alt={item.name}/>
             </td>
             <td>
                 <p>{item.name}</p>

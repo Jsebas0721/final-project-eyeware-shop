@@ -40,7 +40,6 @@ function App() {
         })
         setFrameList(boughtFrames);
         setCartItems([...cartItems, frameObj])
-        
         setTotalCart((totalCart)=> totalCart + frameObj.price);
         
     }
