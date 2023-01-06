@@ -19,14 +19,14 @@
       "name": "BCBG ADELINA",
       "image": "https://cvo-magento-media.s3.amazonaws.com/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/b/c/bcbg_adelina_rosegold.jpg",
       "price": 5.99,
-      "onCart": false
+      "onCart": true
     },
     {
       "id": 4,
       "name": "BCBG AUGUSTINA",
       "image": "https://cvo-magento-media.s3.amazonaws.com/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/b/c/bcbg_augustina_teal.jpg",
       "price": 12.11,
-      "onCart": false
+      "onCart": true
     },
     {
       "id": 5,
@@ -79,7 +79,8 @@
       "name": "BCBG KATIA",
       "image": "https://cvo-magento-media.s3.amazonaws.com/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/b/c/bcbg_katia_teal_2.jpg",
       "price": 34.75,
-      "id": 12
+      "id": 12,
+      "onCart": true
     },
     {
       "name": "BCBG KALEAH",
@@ -92,7 +93,7 @@
       "image": "https://cvo-magento-media.s3.amazonaws.com/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/b/c/bcbg_merissa_brownhorn.jpg",
       "price": 13.43,
       "id": 14,
-      "onCart": true
+      "onCart": false
     },
     {
       "name": "BCBG MOIRA",

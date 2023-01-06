@@ -48,3 +48,7 @@ $ npm start
 
 ![Add frame](https://user-images.githubusercontent.com/108071188/210834932-204264b3-f609-41c8-b38f-237950b1ecf0.png)
 
+- Revome frame from Cart
+
+![remove frame](https://user-images.githubusercontent.com/108071188/210917675-7c4d7b6c-93fc-4fd7-91e4-88a12ba7a0b6.png)
+
