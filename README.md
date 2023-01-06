@@ -52,3 +52,7 @@ $ npm start
 
 ![remove frame](https://user-images.githubusercontent.com/108071188/210917675-7c4d7b6c-93fc-4fd7-91e4-88a12ba7a0b6.png)
 
+
+## Contributing
+
+Contributions and suggestions are welcome, feel free to contact me at **sebastianlopez_21@hotmail.com** with any advice or code improvement ideas.
