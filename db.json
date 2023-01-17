@@ -101,6 +101,18 @@
       "price": 14.5,
       "id": 15,
       "onCart": false
+    },
+    {
+      "name": "BCBG ARLA",
+      "image": "https://cvo-magento-media.s3.amazonaws.com/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/b/c/bcbg_adelina_rosegold.jpg",
+      "price": 23.09,
+      "id": 16
+    },
+    {
+      "name": "BCBG ARLA",
+      "image": "https://cvo-magento-media.s3.amazonaws.com/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/b/c/bcbg_adelina_rosegold.jpg",
+      "price": 24.05,
+      "id": 17
     }
   ]
 }
